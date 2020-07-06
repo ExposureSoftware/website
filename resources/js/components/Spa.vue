@@ -16,6 +16,7 @@
 </template>
 
 <script>
+    require('../scrollIt.min');
     import Preloader from "./Preloader";
     import Header from "./Header";
     import Intro from "./Intro";
@@ -39,7 +40,11 @@
         mounted() {
             setTimeout(() => {
                 this.showLoader = false;
-            }, 750)
+            }, 750);
+
+            $.scrollIt({
+                scrollTime: 800,
+            });
         },
         components: {
             'preloader': Preloader,

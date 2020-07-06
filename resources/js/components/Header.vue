@@ -8,7 +8,9 @@
                             <a class="navbar-brand" href="index.html">
                                 <img src="assets/images/logo.png" alt="Logo">
                             </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
@@ -45,8 +47,67 @@
 </template>
 
 <script>
+    import Headroom from 'headroom.js'
+    require('../jquery.nav')
+
     export default {
         name: "Header",
+        mounted() {
+            const myElement = document.querySelector(".headroom");
+            // construct an instance of Headroom, passing the element
+            const headroom  = new Headroom(myElement);
+            // initialise
+            headroom.init();
+
+            $(".navbar-nav a").on('click', function () {
+                $(".navbar-collapse").removeClass("show");
+            });
+
+
+            //===== Mobile Menu
+
+            $(".navbar-toggler").on('click', function () {
+                $(this).toggleClass("active");
+            });
+
+            $(".navbar-nav a").on('click', function () {
+                $(".navbar-toggler").removeClass('active');
+            });
+
+            var subMenu = $(".sub-menu-bar .navbar-nav .sub-menu");
+
+            if (subMenu.length) {
+                subMenu.parent('li').children('a').append(function () {
+                    return '<button class="sub-nav-toggler"> <span></span> </button>';
+                });
+
+                var subMenuToggler = $(".sub-menu-bar .navbar-nav .sub-nav-toggler");
+
+                subMenuToggler.on('click', function () {
+                    $(this).parent().parent().children(".sub-menu").slideToggle();
+                    return false
+                });
+
+            }
+
+            $('#nav').onePageNav({
+                currentClass: 'active',
+                changeHash: true,
+                scrollSpeed: 800,
+                scrollThreshold: 0.5,
+                filter: '',
+                easing: 'swing',
+                begin: function() {
+                    //I get fired when the animation is starting
+                },
+                end: function() {
+                    //I get fired when the animation is ending
+                },
+                scrollChange: function($currentListItem) {
+                    //I get fired when you enter a section and I pass the list item of the section
+                }
+            });
+        },
     }
 </script>
 

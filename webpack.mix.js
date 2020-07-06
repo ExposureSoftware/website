@@ -11,4 +11,10 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js').copy('resources/js/wow.min.js', 'public/js/wow.js');
+mix.js('resources/js/app.js', 'public/js')
+    .scripts(
+        [
+            'resources/js/wow.min.js',
+        ],
+        'public/js/prereqs.js',
+    );

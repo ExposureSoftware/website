@@ -3,7 +3,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-4">
-                    <div class="section-title text-center pb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="section-title text-center pb-20 wow fadeInUp" data-wow-duration="1s"
+                         data-wow-delay="0.3s">
                         <h6 class="sub-title">Our Contact</h6>
                         <h4 class="title">Get In <span>Touch.</span></h4>
                     </div> <!-- section title -->
@@ -12,7 +13,8 @@
             <div class="contact-info pt-30">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-contact-info contact-color-1 mt-30 d-flex  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <div class="single-contact-info contact-color-1 mt-30 d-flex  wow fadeInUp"
+                             data-wow-duration="1s" data-wow-delay="0.3s">
                             <div class="contact-info-icon">
                                 <i class="lni-map-marker"></i>
                             </div>
@@ -22,7 +24,8 @@
                         </div> <!-- single contact info -->
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-contact-info contact-color-2 mt-30 d-flex  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <div class="single-contact-info contact-color-2 mt-30 d-flex  wow fadeInUp"
+                             data-wow-duration="1s" data-wow-delay="0.6s">
                             <div class="contact-info-icon">
                                 <i class="lni-envelope"></i>
                             </div>
@@ -33,7 +36,8 @@
                         </div> <!-- single contact info -->
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-contact-info contact-color-3 mt-30 d-flex  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
+                        <div class="single-contact-info contact-color-3 mt-30 d-flex  wow fadeInUp"
+                             data-wow-duration="1s" data-wow-delay="0.9s">
                             <div class="contact-info-icon">
                                 <i class="lni-phone"></i>
                             </div>
@@ -47,7 +51,8 @@
             </div> <!-- contact info -->
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="contact-wrapper-form pt-115  wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="contact-wrapper-form pt-115  wow fadeInUpBig" data-wow-duration="1s"
+                         data-wow-delay="0.5s">
                         <h4 class="contact-title pb-10"><i class="lni-envelope"></i> Leave <span>A Message.</span></h4>
 
                         <form id="contact-form" action="assets/contact.php" method="post">
@@ -88,6 +93,52 @@
 <script>
     export default {
         name: "Contact",
+        mounted() {
+            // Get the form.
+            const form = $('#contact-form');
+
+            // Get the messages div.
+            const formMessages = $('.form-message');
+
+            // Set up an event listener for the contact form.
+            $(form).submit(function (e) {
+                // Stop the browser from submitting the form.
+                e.preventDefault();
+
+                // Serialize the form data.
+                let formData = $(form).serialize();
+
+                // Submit the form using AJAX.
+                $.ajax({
+                    type: 'POST',
+                    url: $(form).attr('action'),
+                    data: formData,
+                })
+                    .done(function (response) {
+                        // Make sure that the formMessages div has the 'success' class.
+                        $(formMessages).removeClass('error');
+                        $(formMessages).addClass('success');
+
+                        // Set the message text.
+                        $(formMessages).text(response);
+
+                        // Clear the form.
+                        $('#contact-form input,#contact-form textarea').val('');
+                    })
+                    .fail(function (data) {
+                        // Make sure that the formMessages div has the 'error' class.
+                        $(formMessages).removeClass('success');
+                        $(formMessages).addClass('error');
+
+                        // Set the message text.
+                        if (data.responseText !== '') {
+                            $(formMessages).text(data.responseText);
+                        } else {
+                            $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                        }
+                    });
+            });
+        },
     }
 </script>
 
