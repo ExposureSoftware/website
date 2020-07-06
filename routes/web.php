@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', static function () {
+    return view('home');
+});
+
+Route::get('/demo', static function () {
+    return view('demo');
 });
