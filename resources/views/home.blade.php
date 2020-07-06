@@ -37,8 +37,8 @@
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script src="{{ asset('js/wow.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
-
 </head>
 
 <body>
@@ -50,9 +50,6 @@
     <spa></spa>
 </div>
 
-<!--====== Jquery js ======-->
-<script src="assets/js/vendor/modernizr-3.7.1.min.js" defer></script>
-
 <!--====== Slick js ======-->
 <script src="assets/js/slick.min.js" defer></script>
 
@@ -63,18 +60,11 @@
 <script src="assets/js/imagesloaded.pkgd.min.js" defer></script>
 <script src="assets/js/isotope.pkgd.min.js" defer></script>
 
-<!--====== Counter Up js ======-->
-<script src="assets/js/waypoints.min.js" defer></script>
-<script src="assets/js/jquery.counterup.min.js" defer></script>
-
 <!--====== Circles js ======-->
 <script src="assets/js/circles.min.js" defer></script>
 
 <!--====== Appear js ======-->
 <script src="assets/js/jquery.appear.min.js" defer></script>
-
-<!--====== WOW js ======-->
-<script src="assets/js/wow.min.js" defer></script>
 
 <!--====== Headroom js ======-->
 <script src="assets/js/headroom.min.js" defer></script>

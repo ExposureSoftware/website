@@ -37,6 +37,8 @@
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script src="{{ asset('js/app.js') }}"></script>
+
 </head>
 
 <body>
@@ -995,7 +997,6 @@
 <script src="assets/js/isotope.pkgd.min.js"></script>
 
 <!--====== Counter Up js ======-->
-<script src="assets/js/waypoints.min.js"></script>
 <script src="assets/js/jquery.counterup.min.js"></script>
 
 <!--====== Circles js ======-->

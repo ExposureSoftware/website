@@ -1,6 +1,6 @@
 <template>
     <div>
-<!--        <preloader></preloader>-->
+        <preloader v-if="showLoader"></preloader>
         <navigation-header></navigation-header>
         <intro></intro>
         <about></about>
@@ -31,6 +31,16 @@
 
     export default {
         name: "Spa",
+        data() {
+            return {
+                showLoader: true
+            }
+        },
+        mounted() {
+            setTimeout(() => {
+                this.showLoader = false;
+            }, 750)
+        },
         components: {
             'preloader': Preloader,
             'navigation-header': Header,

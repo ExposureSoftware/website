@@ -31,3 +31,7 @@ Vue.component('spa', require('./components/Spa.vue').default);
 const app = new Vue({
     el: '#app'
 });
+
+$(() => {
+    new WOW().init();
+})
