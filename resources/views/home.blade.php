@@ -51,47 +51,42 @@
 </div>
 
 <!--====== Jquery js ======-->
-<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
-
-<!--====== Bootstrap js ======-->
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/vendor/modernizr-3.7.1.min.js" defer></script>
 
 <!--====== Slick js ======-->
-<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/slick.min.js" defer></script>
 
 <!--====== Ajax Contact js ======-->
-<script src="assets/js/ajax-contact.js"></script>
+<script src="assets/js/ajax-contact.js" defer></script>
 
 <!--====== Isotope js ======-->
-<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js" defer></script>
+<script src="assets/js/isotope.pkgd.min.js" defer></script>
 
 <!--====== Counter Up js ======-->
-<script src="assets/js/waypoints.min.js"></script>
-<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js" defer></script>
+<script src="assets/js/jquery.counterup.min.js" defer></script>
 
 <!--====== Circles js ======-->
-<script src="assets/js/circles.min.js"></script>
+<script src="assets/js/circles.min.js" defer></script>
 
 <!--====== Appear js ======-->
-<script src="assets/js/jquery.appear.min.js"></script>
+<script src="assets/js/jquery.appear.min.js" defer></script>
 
 <!--====== WOW js ======-->
-<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/wow.min.js" defer></script>
 
 <!--====== Headroom js ======-->
-<script src="assets/js/headroom.min.js"></script>
+<script src="assets/js/headroom.min.js" defer></script>
 
 <!--====== Jquery Nav js ======-->
-<script src="assets/js/jquery.nav.js"></script>
+<script src="assets/js/jquery.nav.js" defer></script>
 
 <!--====== Scroll It js ======-->
-<script src="assets/js/scrollIt.min.js"></script>
+<script src="assets/js/scrollIt.min.js" defer></script>
 
 <!--====== Magnific Popup js ======-->
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js" defer></script>
 
 <!--====== Main js ======-->
 <script src="assets/js/main.js" defer></script>
