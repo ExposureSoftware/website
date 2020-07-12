@@ -1,11 +1,14 @@
 <template>
-    <div id="home" class="header-hero bg_cover d-lg-flex align-items-center" style="background-image: url(assets/images/header-hero.jpg)">
+    <div id="home" class="header-hero bg_cover d-lg-flex align-items-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
                     <div class="header-hero-content">
                         <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"><b>Your</b> <span>Consultancy</span> Partner for <b>Growth.</b></h1>
-                        <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Phasellus vel elit efficitur, gravida libero sit amet, scelerisque  tortor arcu, commodo sit amet nulla sed.</p>
+                        <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                            Exposure Software's focus is on helping you build the tools you <strong>need</strong> to
+                            increase your business and optimize your workflows.
+                        </p>
                         <div class="header-singup wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
                             <input type="text" placeholder="username@yourdomain.com">
                             <button class="main-btn">Sign Up</button>
