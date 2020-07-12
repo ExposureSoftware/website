@@ -60,9 +60,6 @@
                     </div>
                 </div> <!-- row -->
             </div> <!-- footer widget -->
-            <div class="footer-copyright text-center">
-                <p class="text">© 2022 Crafted by <a href="https://uideck.com" rel="nofollow">UIdeck</a> All Rights Reserved.</p>
-            </div>
         </div> <!-- container -->
     </footer>
 </template>

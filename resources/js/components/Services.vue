@@ -150,12 +150,6 @@
                                     <p class="text">Lorem Ipsum is simply dummy tex of the printing and typesetting
                                         industry. Lorem Ipsum .</p>
                                 </div>
-                                <div class="shape shape-1">
-                                    <img src="assets/images/shape/shape-1.svg" alt="shape">
-                                </div>
-                                <div class="shape shape-2">
-                                    <img src="assets/images/shape/shape-2.svg" alt="shape">
-                                </div>
                             </div> <!-- single service -->
                         </div>
                         <div class="col-lg-4 col-md-7">
@@ -168,9 +162,6 @@
                                     <p class="text">Lorem Ipsum is simply dummy tex of the printing and typesetting
                                         industry. Lorem Ipsum .</p>
                                 </div>
-                                <div class="shape shape-3">
-                                    <img src="assets/images/shape/shape-3.svg" alt="shape">
-                                </div>
                             </div> <!-- single service -->
                         </div>
                         <div class="col-lg-4 col-md-7">
@@ -182,12 +173,6 @@
                                     <h4 class="service-title">Quality Support</h4>
                                     <p class="text">Lorem Ipsum is simply dummy tex of the printing and typesetting
                                         industry. Lorem Ipsum .</p>
-                                </div>
-                                <div class="shape shape-4">
-                                    <img src="assets/images/shape/shape-4.svg" alt="shape">
-                                </div>
-                                <div class="shape shape-5">
-                                    <img src="assets/images/shape/shape-5.svg" alt="shape">
                                 </div>
                             </div> <!-- single service -->
                         </div>
@@ -224,7 +209,7 @@
                         text: function (value) {
                             return value + '%';
                         },
-                        colors: ['#f0f0f0', '#f14836'],
+                        colors: ['#f0f0f0', 'navy'],
                         duration: 1000,
                         wrpClass: 'circles-wrp',
                         textClass: 'circles-text',
@@ -243,7 +228,7 @@
                         text: function (value) {
                             return value + '%';
                         },
-                        colors: ['#f0f0f0', '#f14836'],
+                        colors: ['#f0f0f0', 'navy'],
                         duration: 1000,
                         wrpClass: 'circles-wrp',
                         textClass: 'circles-text',
@@ -262,7 +247,7 @@
                         text: function (value) {
                             return value + '%';
                         },
-                        colors: ['#f0f0f0', '#f14836'],
+                        colors: ['#f0f0f0', 'navy'],
                         duration: 1000,
                         wrpClass: 'circles-wrp',
                         textClass: 'circles-text',
@@ -281,7 +266,7 @@
                         text: function (value) {
                             return value + '%';
                         },
-                        colors: ['#f0f0f0', '#f14836'],
+                        colors: ['#f0f0f0', 'navy'],
                         duration: 1000,
                         wrpClass: 'circles-wrp',
                         textClass: 'circles-text',
