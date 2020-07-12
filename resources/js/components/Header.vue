@@ -5,8 +5,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo.png" alt="Logo">
+                            <a class="navbar-brand" href="index.html" style="color: black;">
+                                <img height="30px" src="https://exposuresoftware.s3.amazonaws.com/images/logo.svg"
+                                     alt="Logo"> <strong>Exposure</strong> Software
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -48,6 +49,7 @@
 
 <script>
     import Headroom from 'headroom.js'
+
     require('../jquery.nav')
 
     export default {
@@ -55,7 +57,7 @@
         mounted() {
             const myElement = document.querySelector(".headroom");
             // construct an instance of Headroom, passing the element
-            const headroom  = new Headroom(myElement);
+            const headroom = new Headroom(myElement);
             // initialise
             headroom.init();
 
@@ -97,15 +99,15 @@
                 scrollThreshold: 0.5,
                 filter: '',
                 easing: 'swing',
-                begin: function() {
+                begin: function () {
                     //I get fired when the animation is starting
                 },
-                end: function() {
+                end: function () {
                     //I get fired when the animation is ending
                 },
-                scrollChange: function($currentListItem) {
+                scrollChange: function ($currentListItem) {
                     //I get fired when you enter a section and I pass the list item of the section
-                }
+                },
             });
         },
     }

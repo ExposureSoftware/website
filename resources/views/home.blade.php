@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="https://exposuresoftware.s3.amazonaws.com/images/logo.svg" type="image/svg">
 
     <!--====== Slick CSS ======-->
     <link rel="stylesheet" href="assets/css/slick.css">
@@ -36,6 +36,8 @@
 
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="css/app.css">
 
     <script src="{{ asset('js/prereqs.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>

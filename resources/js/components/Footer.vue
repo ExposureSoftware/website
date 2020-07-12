@@ -5,8 +5,9 @@
                 <div class="row">
                     <div class="col-lg-3 col-sm-6 order-sm-1 order-lg-1">
                         <div class="footer-about pt-40">
-                            <a href="#">
-                                <img src="assets/images/logo.png" alt="Logo">
+                            <a href="#" style="text-decoration: none; color: black;">
+                                <img height="30px" src="https://exposuresoftware.s3.amazonaws.com/images/logo.svg" alt="Logo">
+                                Exposure Software
                             </a>
                             <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, repudiandae! Totam, nemo sed? Provident.</p> <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus</p>
                         </div> <!-- footer about -->
