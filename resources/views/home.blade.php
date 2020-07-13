@@ -37,7 +37,7 @@
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="/css/all.css">
 
     <script src="{{ asset('js/prereqs.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
