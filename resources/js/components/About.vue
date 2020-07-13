@@ -12,7 +12,7 @@
             </div> <!-- row -->
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="about-image mt-60 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="about-image mt-60 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="text-align: center;">
                         <img src="assets/images/about.png" alt="about">
                     </div> <!-- about image -->
                 </div>

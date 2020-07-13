@@ -17,8 +17,7 @@ mix.js('resources/js/app.js', 'public/js')
             'resources/js/wow.min.js',
         ],
         'public/js/prereqs.js',
-    )
-    .less('resources/less/app.less', 'public/css/app.css')
+    ).less('resources/less/app.less', 'public/css/app.css')
     .sass('resources/scss/style.scss', 'public/css/style.css')
     .styles([
         'resources/css/slick.css',
@@ -27,6 +26,7 @@ mix.js('resources/js/app.js', 'public/js')
         'resources/css/animate.css',
         'resources/css/magnific-popup.css',
         'resources/css/bootstrap.min.css',
-        'resources/css/style.css',
-        'public/css/app.css'
+        'resources/css/default.css',
+        'public/css/style.css',
+        'public/css/app.css',
     ], 'public/css/all.css');

@@ -1,7 +1,7 @@
 <template>
     <div>
         <testimonials></testimonials>
-
+        <partners></partners>
     </div>
 </template>
 
