@@ -13,30 +13,6 @@
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="https://exposuresoftware.s3.amazonaws.com/images/logo.svg" type="image/svg">
 
-    <!--====== Slick CSS ======-->
-    <link rel="stylesheet" href="assets/css/slick.css">
-
-    <!--====== Font Awesome CSS ======-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
-    <!--====== Line Icons CSS ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
-
-    <!--====== Animate CSS ======-->
-    <link rel="stylesheet" href="assets/css/animate.css">
-
-    <!--====== Magnific Popup CSS ======-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-
-    <!--====== Bootstrap CSS ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!--====== Default CSS ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
-
-    <!--====== Style CSS ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
     <link rel="stylesheet" href="/css/all.css">
 
     <script src="{{ asset('js/prereqs.js') }}" defer></script>
