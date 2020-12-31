@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /usr/share/nginx/tabletop
+    destination: /usr/share/nginx/exposure
 permissions:
   - object: /usr/share/nginx
     owner: www-data
