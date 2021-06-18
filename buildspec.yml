@@ -7,7 +7,7 @@ phases:
       - npm install
   build:
     commands:
-      - npm run prod
+      - npm run dev
 artifacts:
   files: '**/*'
   name: exposure-$(date +%Y-%m-%d)
