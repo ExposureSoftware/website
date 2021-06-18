@@ -30,3 +30,7 @@ mix.js('resources/js/app.js', 'public/js').vue()
         'public/css/style.css',
         'public/css/app.css',
     ], 'public/css/all.css');
+
+if (mix.inProduction()) {
+    mix.version();
+}
