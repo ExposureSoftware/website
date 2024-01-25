@@ -22,7 +22,7 @@ mix.js('resources/js/app.js', 'public/js').vue()
     .sass('resources/scss/style.scss', 'public/css/style.css')
     .styles([
         'resources/css/slick.css',
-        'resources/css/font-awesome.css',
+        'resources/css/font-awesome.min.css',
         'resources/css/LineIcons.css',
         'resources/css/animate.css',
         'resources/css/magnific-popup.css',
