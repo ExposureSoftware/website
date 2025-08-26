@@ -10,7 +10,8 @@
         "laravel/framework": "^8.47",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.2",
-        "guzzlehttp/guzzle": "^7.0.1"
+        "guzzlehttp/guzzle": "^7.0.1",
+        "league/flysystem-aws-s3-v3": "^3.0"
     },
     "require-dev": {
         "mockery/mockery": "^1.4.2",
