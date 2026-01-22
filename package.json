@@ -24,7 +24,7 @@
         "sass": "^1.26.9",
         "sass-loader": ">=12.1.0",
         "vue": "^2.5.17",
-        "vue-loader": "^15.9.7",
+        "vue-loader": "^17.4.2",
         "vue-template-compiler": "^2.6.11",
         "waypoints": "^4.0.1",
         "concurrently": "^9.0.1"
