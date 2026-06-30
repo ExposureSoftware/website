@@ -1,0 +1,78 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  db:
+    image: postgres:16-alpine
+    container_name: exposure_db
+    environment:
+      POSTGRES_DB: exposure
+      POSTGRES_USER: exposure
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - exposure
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: exposure_redis
+    ports:
+      - "6379:6379"
+    networks:
+      - exposure
+
+  # PHP-FPM Application
+  app:
+    build:
+      context: .
+      dockerfile: exposuresoftware.dockerfile
+    container_name: exposure_app
+    volumes:
+      # Mount application code for development
+      - .:/var/www/html
+      # Persist vendor directory (avoid re-installing on every restart)
+      - vendor_data:/var/www/html/vendor
+      # Persist node_modules
+      - node_modules_data:/var/www/html/node_modules
+    env_file:
+      - .env
+    environment:
+      # Override only Docker-specific hostnames
+      DB_CONNECTION: pgsql
+      DB_HOST: db
+      REDIS_HOST: redis
+      DB_PORT: 5432
+    depends_on:
+      - db
+      - redis
+    networks:
+      - exposure
+
+  # Nginx Web Server
+  web:
+    build:
+      context: .
+      dockerfile: nginx.dockerfile
+    container_name: exposure_web
+    ports:
+      - "8000:80"
+    volumes:
+      # Share public directory with app container
+      - .:/var/www/html:ro
+    depends_on:
+      - app
+    networks:
+      - exposure
+
+networks:
+  exposure:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  vendor_data:
+  node_modules_data:
